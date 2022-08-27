@@ -1,5 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Dictionary<string, string> dictionary1 = new Dictionary<string, string>();
+    dictionary1.Add("txt", "test");
+
 }
 
 <fast-card>
@@ -7,7 +10,7 @@
     <fast-button id="button" appearance="accent">Click Me</fast-button>
 </fast-card>
 
-<fast-anchor href="#">Anchor</fast-anchor>
+
 <div>
     <style>
         /* For example purposes only. App authors needs to define */
@@ -23,4 +26,8 @@
     <fast-option value="2">Option 2</fast-option>
     <fast-option value="3">Option 3</fast-option>
 </fast-combobox>
-<fast-text-field placeholder="name"></fast-text-field>
+<fast-text-field  placeholder="name"></fast-text-field>
+<a  asp-route-foo="bar"  asp-route-check="@null" >Privacy</a>
+<a  asp-route-check="test" >Check</a>
+@dictionary1["txt"]
+

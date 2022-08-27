@@ -5,4 +5,15 @@
     <RootNamespace>fast_aspnet</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FastMeal.Common.CodeStyle" Version="1.0.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI" Version="1.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="GlobalUsings.cs" />
+    <Compile Remove="Views\Home\test.cshtml.cs" />
+  </ItemGroup>
+
 </Project>
